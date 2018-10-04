@@ -1,0 +1,50 @@
+
+<html>
+    <head>
+	<title>Simple Interest Calculation</title>
+    </head>
+    <body>
+        <form id="myForm">
+            <table  border = "0" width = 300px>
+                <tr>
+                    <td> 
+                        Amount:
+                    </td>
+                    <td>
+                        <input type="text" id="p">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        Rate:
+                    </td>
+                    <td>
+                        <input type="text" id="r">
+                    </td>
+                </tr>
+                <tr>
+                    <td> 
+                        No. of Years:
+                    </td>
+                    <td>
+                        <input type="text" id="t">
+                    </td>
+                </tr>
+            </table>
+            <button onclick="document.getElementById('myForm').value = ''">Clear</button>
+        </form>
+            <p>
+                <button onClick="calculate()">Calculate</button>
+            </p>
+            <p id="result"></p>       
+    </body>
+    <script>
+            function calculate(){
+                p = document.getElementById("p").value;
+                r = document.getElementById("r").value;
+                t = document.getElementById("t").value;
+                result = document.getElementById("result");
+                result.innerHTML = "Amount is "+ p +"<br>Rate is "+ r +"<br>Time is "+ t +"<br>The interest is " + (p*r*t/100);
+            }
+        </script>
+</html>
