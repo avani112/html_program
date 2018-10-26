@@ -1,0 +1,22 @@
+<html>
+	<head>
+		<title>registration form</title>
+	</head>
+	<body><center>
+		<form action="test.html" method="get">
+			Name: <input type="text" placeholder="enter your name" id="name" name="name"><br>
+			Surname: <input type="text" placeholder="enter your surname" id="sur" name="sur"><br>
+			Gender: <input type="radio" id="m" name="g"> M
+				<input type="radio" id="f" name="g"> F<br>
+			 Address:<textarea placeholder="enter your address" id=address" name="address"></textarea> <br>
+			Contact: <input type="number" maxlength="10" id="contact" name="contact"><br>
+			City:  <select>
+					<option> Indore </option>
+					<option> Other </option>
+				</select><br>
+				<input type="submit" value="register">
+		</form>
+	</center></body>
+</html>
+				
+				
