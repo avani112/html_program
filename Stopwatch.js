@@ -56,4 +56,3 @@ function reset(){
 	document.getElementById("display").innerHTML="00:00:00";
 	document.getElementById("startstop").innerHTML="Start";
 }
-// window.setInterval(stopwatch,1000);
